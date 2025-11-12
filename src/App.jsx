@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, Mail, Github, Linkedin, Twitter, Instagram, Code, Download, ArrowDown, ExternalLink } from 'lucide-react';
+import HeroImageSection from './components/HeroImageSection';
+
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -148,43 +150,11 @@ export default function App() {
           </div>
         </nav>
 
-        {/* Hero Section */}
-        <section id="home" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full mb-6 font-medium">
-              Available for Work
-            </div>
-            <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              Welcome! I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">B.Rajashekar</span>
-            </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              A fresher with lots of enthusiasm for learning new technologies and building new projects. Combining creativity and technical expertise. Eager to learn lots of new things.
-            </p>
-            <div className="flex flex-wrap justify-center gap-6 mb-8">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600 dark:text-blue-400">5+</div>
-                <div className="text-gray-600 dark:text-gray-400">Projects Done</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-purple-600 dark:text-purple-400">1+</div>
-                <div className="text-gray-600 dark:text-gray-400">Years of Experience</div>
-              </div>
-            </div>
-            <div className="flex justify-center gap-4">
-              <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-medium">
-                <Download className="w-5 h-5" />
-                Download CV
-              </button>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="flex items-center gap-2 px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white rounded-lg transition-colors font-medium"
-              >
-                Scroll Down
-                <ArrowDown className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
-        </section>
+      {/* Hero Section */}
+<section id="home">
+  <HeroImageSection />
+</section>
+
 
         {/* About Section - Essential Tools */}
         <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800/50">
