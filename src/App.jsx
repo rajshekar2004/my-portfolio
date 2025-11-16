@@ -3,6 +3,7 @@ import { Moon, Sun, Mail, Github, Linkedin, Twitter, Instagram, Code, Download, 
 import HeroImageSection from './components/HeroImageSection';
 
 
+
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
